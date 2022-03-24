@@ -1,0 +1,259 @@
+:root{
+    --blanco:#fff;
+    --colorprincipal:rgb(255, 152, 212);
+    --colorsecundario: rgb(255, 232, 252);
+}
+
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+h1,h3{
+    margin: 0;
+}
+
+body{
+    background-color: rgb(192, 192, 192);
+}
+
+.barrasuperior{
+    width: 40%;
+    height: 20px;
+    background-color: var(--colorprincipal);
+    position: absolute;
+    top: 0px;
+}
+
+.barraderecha{
+    width: 20px;
+    height: 45%;
+    background-color: var(--colorprincipal);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.barrainferior{
+    width: 65%;
+    height: 20px;
+    background-color: var(--colorprincipal);
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.contenedor{
+    width: 620px;
+    height: 1080px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding-top: 50px;
+    position: relative;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.479);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacto{
+    margin-right: -20px;
+}
+.exterNombre{
+    padding: 20px 100px 20px 20px;
+    background-color: var(--colorsecundario);
+    margin-left: 20px;
+}
+.borderizquierdo{
+    border-left: 2px solid var(--colorprincipal);
+    margin-right: 20px;
+}
+
+.barra{
+    background-color: var(--colorsecundario);
+    height: 10px;
+    width: 90%;
+}
+
+.barraInterna{
+    background-color: var(--colorprincipal);
+    height: 10px;
+}
+
+.uno{
+    width: 70%;
+}
+
+.dos{
+    width: 50%;
+}
+
+.tres{
+    width: 60%;
+}
+
+.icon{
+    color: var(--colorprincipal);
+    width: 25px;
+    height: 27px;
+}
+.borderinferior{
+    border-bottom: 2px solid var(--colorprincipal);
+}
+
+.foto{
+    width: 140px;
+    height: 140px;
+    border: 2px solid var(--colorprincipal);
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.paddingSub{
+    padding-top: 13px;
+}
+
+.divFlex{
+    display: flex;
+    align-items: center;
+}
+
+.ubicacion{
+    margin-bottom: 0px;
+}
+
+.ubicacion2{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.ubicacion3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.com{
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
+
+.marginText{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.marginTextDown{
+    margin-top: 3px;
+}
+.perfil{
+    padding-left: 32px;
+}
+.text1{
+    padding-bottom: 30px;
+    margin-top: 15px;
+}
+.subperior{
+    padding-top: 30px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+}
+
+.marginborderizquierdo{
+    padding-left: 30px;
+}
+.marginizquierdo{
+    margin-left: 60px;
+}
+.nombre{
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 27px;
+    margin-left: 15px;
+    color: rgb(59, 59, 59);
+}
+.profesion{
+    color: rgb(59, 59, 59);
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-left: 15px;
+
+}
+
+.cuerpo{
+    display: flex;
+}
+.izqui{
+    width: 45%;
+    height: 600px;
+}
+
+.dere{
+    width: 55%;
+    height: 600px;
+}
+
+.explab{
+    margin-top: 20px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.paddingTextExp{
+    margin-top: 3px;
+    padding-bottom: 35px;
+}
+
+.formaca{
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+.idiomas{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 20px;
+}
+
+.rsociales{
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.habilidades{
+    padding-top: 20px;
+}
+
+.texto{
+    font-family: sans-serif;
+    color: rgb(59, 59, 59) ;
+    font-weight: 100;
+    font-size: 9px;
+}
+
+.sub{
+    font-family: sans-serif;
+    font-size: 17px;
+    color: rgb(59, 59, 59) ;
+}
+
+.sub2{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 140;
+    color: rgb(59, 59, 59) ;
+}
+
+.sub3{
+    font-family: sans-serif;
+    font-weight: 120;
+    font-size: 12px;
+    color: var(--colorprincipal);    
+}

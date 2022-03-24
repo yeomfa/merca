@@ -1,0 +1,226 @@
+
+/*=== colores ===*/
+:root{
+    --colorMordado: #243F92;
+    --colorMordadoOscuro: #29337d;
+    --colorNaranja: rgb(255, 149, 0);
+    --colorNaranjaOscuro: #ea5721;
+}
+/*=== Fuente y Tipografia ===*/
+:root{
+    --body-font:'Roboto', sans-serif;
+    --big-fonr-size: 2rem;
+    --normal-font-size: 0.938rem;
+    --smaller-font-size: 0.875rem;
+}
+@media screen and (min-width: 768px){
+    :root{
+        --big-fonr-size: 2.5rem;
+        --normal-font-size: 1rem;
+    }
+}
+/*=== Base ===*/
+*,::before, ::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+    color: var(--colorMordadoOscuro);   
+}
+h1{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/*=== FORM ===*/
+.l-form{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+/*=== Shapes ===*/
+.shape1,
+.shape2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.shape1{
+    top: -7rem;
+    left: -3.5rem;
+    background: linear-gradient(180deg, var(--colorNaranja)0%, rgba(196,196,196,0)100%);
+}
+.shape2{
+    bottom: -6rem;
+    right: -5.5rem;
+    background: linear-gradient(180deg, var(--colorMordadoOscuro)0%, rgba(196,196,196,0)100%);
+    transform: rotate(180deg);
+}
+/*=== Form ===*/
+.form{
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+.form_content{
+    width: 290px;
+}
+.form_img{
+    display: none;
+}
+.form_title{
+    font-size: var(--big-fonr-size);
+    font-weight: 500;
+    margin-bottom: 2rem;
+    font-weight: bolder;
+}
+.form_div{
+    position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin-bottom: 1rem;
+    padding: .25rem 0;
+    border-bottom: 1px solid var(--colorMordadoOscuro);
+}
+/*=== Div focus ===*/
+.form_div.focus{
+    border-bottom: 1px solid var(--colorMordado);
+}
+.form_div-one{
+    margin-bottom: 3rem;
+}
+.form_icon{
+    font-size: 1.5rem;
+    color: var(--colorMordadoOscuro);
+    transition: .3s;
+}
+/*=== icon focus ===*/
+.form_div.focus .form_icon{
+    color: var(--colorNaranja);
+}
+.form_label{
+    display: block;
+    position: absolute;
+    left: .75rem;
+    top: .25rem;
+    font-size: var(--normal-font-size); 
+    color: var(--colorMordadoOscuro);
+    transition: .3s; 
+}
+/*=== label focus ===*/
+.form_div.focus .form_label{
+    top: -1.5rem;
+    font-size: .875rem;
+    color: var(--colorNaranja);
+}
+.form_div-input{
+    position: relative;
+}
+.form_input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    padding: .5rem .75rem;
+    font-size: 1.2rem;
+    color: var(--colorMordado);
+    transition: .3s;
+}
+.form_forgot{
+    display: block;
+    text-align: right;
+    margin-bottom: 2rem;
+    font-size: var(--normal-font-size);
+    color: var(--colorMordadoOscuro);
+    font-weight: 500;
+    transition: .5;
+}
+.form_forgot:hover{
+    color: var(--colorNaranja);
+    transition: .3s;
+}
+.form_button{
+    width: 100%;
+    padding: 1rem;
+    font-size: var(--normal-font-size);
+    outline: none;
+    border: none;
+    margin-bottom: 3rem;
+    background-color: var(--colorNaranja);
+    border-radius: .5rem;
+    cursor: pointer;
+    color: var(--colorMordado);
+    font-weight: bolder;
+    /*transition: .3s;*/
+}
+.form_button:hover{
+    background-color: #ffa600;
+}
+/*=== Form social ===*/
+.form_social{
+    text-align: center;  
+    
+}
+.form_social-text{
+    display: block;
+    font-size: var(--normal-font-size);
+    margin-bottom: 1rem;
+    color: var(--colorMordadoOscuro);
+}
+
+.form_social-icon{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+    padding: .5rem;
+    background-color: var(--colorMordadoOscuro);
+    color: white;
+    font-size: 1.25rem;
+    border-radius: 30%;
+}
+.form_social-icon:hover{
+    background-color: var(--colorMordado);
+}
+/*=== MEDIA QUERIS ===*/
+@media screen and (min-width: 968px){
+    .shape1{
+        width: 400px;
+        height: 400px;
+        top: -11rem;
+        left: -6.5rem;
+    }
+    .shape2{
+        width: 300px;
+        height: 300px;
+        right: -6.5rem;     
+    }
+    .form{
+        grid-template-columns: 1.5fr 1fr;
+        padding: 0 2rem;
+    }
+    .form_content{
+        width: 320px;
+    }
+    .form_img{
+        display: block;
+        width: 350px;
+        justify-self: center;
+    }
+}

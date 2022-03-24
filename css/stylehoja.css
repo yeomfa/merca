@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+:root{
+    /*COLORES*/
+    --colorMorado: #243F92;
+    --colorMoradoOscuro: #29337d;
+    --colorMoradoLight: #f0f0f7;
+    --colorNaranja: #ff9500;
+    --colorNaranjaOscuro: #ea5721;
+
+    /*TANSICIONES*/
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
+
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 630px;
+    background: rgb(255,57,0);
+    background: linear-gradient(0deg, rgba(255,57,0,1) 0%, rgba(255,140,0,1) 35%, rgba(255,131,0,1) 100%);
+}
+
+.contenedor-header{
+    display: flex;
+    align-items: center;
+}
+
+.header{
+    background-color: white;
+    height: 90px;
+    width: 100%;
+}
+
+.back a{
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
+.cuerpo a{
+    text-decoration: none;
+    color: black;
+}
+
+.icon-back{
+    color: var(--colorMoradoOscuro);
+    border-radius: 50%;
+    font-size: 35px;
+}
+
+    .icon-back:hover{
+        color: white;
+        background: var(--colorMoradoOscuro);
+    }
+
+.sub-head{
+    padding-top: 20px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title span{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 50px;
+}
+
+.contenedor-flex{
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+}
+
+.contenedor-grid{
+    display: grid;
+    gap: 6rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.logo-text .logo img{
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-text .text img{
+    height: 45px;
+    padding-right: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.contenedor-header .logo-text{
+    display: flex;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+}
+
+.contenedor-hoja{
+    background-color: white;
+    width: 250px;
+    height: 300px;
+    transition: .1s;
+    border-radius:10px;
+}
+
+.contenedor-hoja:hover{
+    height: 310px;
+    width: 260px;
+    box-shadow: 0px 11px 32px -10px rgba(0,0,0,0.5);   
+}
+
+.contenedor-hoja .photo img{
+    width: 180px;
+    height: 180px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.contenedor-hoja .photo{
+    display: flex;
+    height: 220px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-hoja .name-rol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70px;
+    justify-content: center;
+}
+
+.contenedor-hoja .name-rol span{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.contenedor-hoja .name-rol p{
+    font-size: 15px;
+    font-weight: 400;
+}
