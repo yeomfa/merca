@@ -26,7 +26,7 @@ body{
     height: 100vh;
     margin: 0%;
     padding: 0%;
-    background-color: rgb(237, 215, 250);
+    background-color: rgb(243, 229, 252);
 }
 
 /*HEADER DE PAGINA*/
@@ -66,7 +66,7 @@ body{
 }
 
 .logo-opciones{
-    padding-left: 45px;
+    padding-left: 50px;
     display: flex;
     align-items: center;
 }
@@ -541,21 +541,21 @@ body{
     box-shadow: none;
 }
 
-.bar-menu.close .text{
+.bar-menu.close .text,
+.bar-menu.close .bar-logo-text,
+.bar-menu.close .bar-options .op-icon,
+.bar-menu.close .bar-options a,
+.bar-menu.close .bar-options,
+.bar-menu.close .name,
+.bar-menu.close .rol{
+    font-size: 0;
     opacity: 0;
-}
-
-.bar-menu.close .bar-logo-text{
-    opacity: 0;
-}
-
-.bar-menu.close .bar-options{
-    opacity: 0;
+    width: 0;
 }
 
 .bar-menu li{
     height: 50px;
-    margin-top: 10px;
+    margin-top: 2px;
     list-style: none;
     display: flex;
     align-items: center;
