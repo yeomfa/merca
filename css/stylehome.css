@@ -431,6 +431,10 @@ body{
     margin: 0;
 }
 
+.footer-text:hover{
+    color: var(--colorNaranja);
+}
+
 .footer-top{
     margin-left: 30%;
     height: 50%;
