@@ -17,8 +17,6 @@
 }
 
 body{
-    margin: 0%;
-    padding: 0%;
     background-color: #ffffff;
 }
 
@@ -36,6 +34,7 @@ body{
     position: fixed;
     box-shadow: 0px -5px 80px -29px rgba(0,0,0,1);
     top: 0;
+    z-index: 1;
 }
 
 .header a{
@@ -159,6 +158,7 @@ body{
 .bold-text:hover{
     font-weight: bolder;
     }
+
 #acceder{
     border: 1px solid var(--colorMoradoOscuro);
     border-radius: 50px;
@@ -188,9 +188,12 @@ body{
 .cuerpo{
     height: 1500px;
     margin-top: 90px;
+    margin: 0 auto;
+    max-width: 1280px;
 }
 
 .contenedor-cuerpo{
+    margin: 0 auto;
     background: rgb(18,4,132);
     background: linear-gradient(0deg, rgba(18,4,132,1) 0%, rgba(64,0,167,1) 35%, rgba(88,16,164,1) 100%);
     height: 500px;
@@ -226,6 +229,12 @@ body{
     width: 100%;
 }
 
+.contenedor-cuerpo-dos .contenedor-subcuerpo-dos{ 
+    background-size: 100% 100%; 
+    background-image: url(../img/general/backConfetisPurple.png);
+    height: 500px;
+}
+
 .title-cuerpo-dos{
     padding-left: 30px;
     padding-top: 10px;
@@ -248,7 +257,27 @@ body{
 }
 
 .cont-cuerpo-dos-izq img{
-    height: 400px;
+    padding-right: 70px;
+    height: 220px;
+    animation: merca 5s infinite;
+}
+
+@keyframes merca{
+    0%{
+        transform: translateX(-10px) rotate(5deg);
+    }
+    25%{
+        transform: translateX(10px) rotate(-5deg)
+    }
+    50%{
+        transform: translateX(-10px) rotate(5deg)
+    }
+    75%{
+        transform: translateX(10px) rotate(-5deg)
+    }
+    100%{
+        transform: translateX(-10px) rotate(5deg)
+    }
 }
 
 .cont-cuerpo-dos-der span{
@@ -287,7 +316,7 @@ body{
 
 .cont-cuerpo-tres-der img{
     padding-left: 40px;
-    height: 250px;
+    height: 230px;
 }
 
 .cont-cuerpo-tres-izq span{
