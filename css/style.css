@@ -187,7 +187,7 @@ body{
 
 .cuerpo{
     height: 1500px;
-    margin-top: 90px;
+    padding-top: 90px;
     margin: 0 auto;
     max-width: 1280px;
 }
@@ -259,24 +259,18 @@ body{
 .cont-cuerpo-dos-izq img{
     padding-right: 70px;
     height: 220px;
-    animation: merca 5s infinite;
+    animation: merca 3s infinite;
 }
 
 @keyframes merca{
     0%{
         transform: translateX(-10px) rotate(5deg);
     }
-    25%{
-        transform: translateX(10px) rotate(-5deg)
-    }
     50%{
-        transform: translateX(-10px) rotate(5deg)
-    }
-    75%{
-        transform: translateX(10px) rotate(-5deg)
+        transform: translateX(10px) rotate(-5deg);
     }
     100%{
-        transform: translateX(-10px) rotate(5deg)
+        transform: translateX(-10px) rotate(5deg);
     }
 }
 
