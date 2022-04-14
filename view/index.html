@@ -34,15 +34,9 @@
                 </li>
                 <ul class="options-links">
                     <li class="op-link">
-                        <a href="#">
+                        <a href="#home">
                             <i class='bx bx-home-alt-2 op-icon'></i>
                             <span class="text op-text">Inicio</span>
-                        </a>
-                    </li>
-                    <li class="op-link">
-                        <a href="#">
-                            <i class='bx bx-shopping-bag op-icon'></i>
-                            <span class="text op-text">Categorías</span>
                         </a>
                     </li>
                     <li class="op-link">
@@ -58,44 +52,38 @@
     <!--HEADER-->
     <header class="header">
         <div class="contenedor-head">
-            <div class="head-izq">
-                <div class="logo-opciones">
-                    <a href="home.html"><img src="img/logos/LogoMercaAroundFinal.png" alt="Logo merca" class="logoHead"></a>
-                    <a href="home.html"><img src="img/logos/LogoText.png" alt="Texto merca" class="textLogoHead"></a>
-                </div>
-                <div class="contenedor-barra">
-                    <input type="search" class="barra-buscar" placeholder="Buscar productos">
-                    <section class="boton-buscar"><a href="#"><img src="img/icons/iconLupa.png" alt="Boton buscar" class="icon-search"></a></section>
-                </div> 
+            <div class="logo-opciones">
+                <a href="home.html"><img src="img/logos/LogoMercaAroundFinal.png" alt="Logo merca" class="logoHead"></a>
+                <a href="home.html"><img src="img/logos/LogoText.png" alt="Texto merca" class="textLogoHead"></a>
             </div>
-            <div class="navegacion">
-                <ul>
-                    <li><a class="bold-text" href="#">Tiendas</a></li>
-                    <li><a class="bold-text" href="#">Ofertas</a></li>
-                    <li><a class="bold-text" href="#">Vender</a></li>
+            <div class="head-opciones">
+                <ul class="nav__list">
+                    <li><a class="bold-text" href="#home">Inicio</a></li>
+                    <li><a class="bold-text" href="#merca">¿MERCA?</a></li>
+                    <li><a class="bold-text" href="#tienda">Tienda</a></li>
                 </ul>
             </div>
             <nav class="navegacion">
-                <ul>
-                    <li><a href="#"><img src="img/icons/iconCar.png" class="car" alt="Carrito"></a></li>
-                    <li><a id="acceder" href="login.html">Acceder</a></li>
+                <ul class="nav__list-2">
+                    <li><a class="acceder respon-register" href="login.html">Registrarse</a></li>
+                    <li><a class="acceder" href="login.html">Acceder</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <!--CUERPO-->
     <section class="cuerpo">
-        <div class="contenedor-cuerpo">
+        <section id="home">
             <div class="contenedor-subcuerpo">
                 <div class="cont-cuerpo-izq">
-                    <span>¡LLEVA TU NEGOCIO <br> AL SIGUIENTE NIVEL!</span>
+                    <span class="title-1">¡LLEVA TU NEGOCIO AL SIGUIENTE NIVEL!</span>
                 </div>
                 <div class="cont-cuerpo-der">
                     <a href="login.html"><img src="img/general/BtnUnete.png" alt="Unete a la familia Merca"></a>
                 </div>
             </div>
-        </div>
-        <div class="contenedor-cuerpo-dos">
+        </section>
+        <section id="merca">
             <div class="contenedor-subcuerpo-dos">
                 <div class="title-cuerpo-dos">
                     <h3>¿Qué es MERCA?</h3>
@@ -105,35 +93,32 @@
                        <img src="img/general/BannerLogin.png" alt="Canasta Merca llena de productos">
                     </div>
                     <div class="cont-cuerpo-dos-der">
-                        <span>MERCA es una plataforma que funciona<br> como intemediario entre clientes y negocios.</span>
-                        
+                        <span>MERCA es una plataforma que funciona como intemediario entre clientes y negocios.</span>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="contenedor-cuerpo-tres">
-            <div class="title-cuerpo-tres">
-                <h3>¡Une ya tu tienda!</h3>
-            </div>
-            <div class="cont-lados-tres">
-                <div class="cont-cuerpo-tres-izq">
-                    <span>En MERCA subir y publicar los productos<br>de tu tienda es totalmente gratis.</span>
-                    <a href="login.html"><div class="btn-unete">Únete</div></a>
+        </section>
+        <section id="tienda">
+            <div class="contenedor-subcuerpo-tres">
+                <div class="title-cuerpo-tres">
+                    <h3>¡Une ya tu tienda!</h3>
                 </div>
-                <div class="cont-cuerpo-tres-der">
-                    <img src="img/general/logoMercaPc.png" alt="Canasta Merca llena de productos">                 
+                <div class="cont-lados-tres">
+                    <div class="cont-cuerpo-tres-izq">
+                        <span>En MERCA subir y publicar los productos de tu tienda es totalmente gratis.</span>
+                        <div class="box-btn"><a href="login.html"><div class="btn-unete">Únete</div></a></div>
+                    </div>
+                    <div class="cont-cuerpo-tres-der">
+                        <img src="img/general/logoMercaPc.png" alt="Canasta Merca llena de productos">
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </section>
 
     <!--FOOTER-->
     <footer class="footer">
         <div class="footer-contenedor">
-            <div class="footer-title-contenedor">
-                <div class="footer-title-main">Esta página fue hecha con amor</div>
-                <i class='bx bxs-heart icon-heart-footer'></i>
-            </div>
             <div class="footer-contenido">
                 <div class="footer-left">
                     <div class="footer-top">
@@ -151,7 +136,7 @@
                     <div class="footer-center-up">
                         <div class="footer-logo-contenedor">
                             <img src="img/logos/LogoMercaAroundFinal.png" class="footer-logo" alt="Logo Merca">
-                        </div> 
+                        </div>
                     </div>
                     <div class="footer-center-down">
                         <div class="footer-redes-contenedor">

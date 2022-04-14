@@ -27,7 +27,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: var(--body-font);
-    color: var(--colorMordadoOscuro);   
+    color: var(--colorMordadoOscuro);
 }
 h1{
     margin: 0;
@@ -113,9 +113,9 @@ img{
     position: absolute;
     left: .75rem;
     top: .25rem;
-    font-size: var(--normal-font-size); 
+    font-size: var(--normal-font-size);
     color: var(--colorMordadoOscuro);
-    transition: .3s; 
+    transition: .3s;
 }
 /*=== label focus ===*/
 .form_div.focus .form_label{
@@ -172,8 +172,7 @@ img{
 }
 /*=== Form social ===*/
 .form_social{
-    text-align: center;  
-    
+    text-align: center;
 }
 .form_social-text{
     display: block;
@@ -209,7 +208,7 @@ img{
     .shape2{
         width: 300px;
         height: 300px;
-        right: -6.5rem;     
+        right: -6.5rem;
     }
     .form{
         grid-template-columns: 1.5fr 1fr;

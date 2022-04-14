@@ -4,8 +4,8 @@ var selecciones = []
 
 generarTablero()
 
-    function cargarIconos() {
-        iconos = [
+function cargarIconos() {
+    iconos = [
             '<i class="fa-brands fa-python"></i>',
             '<i class="fa-solid fa-code"></i>',
             '<i class="fa-brands fa-php"></i>',
@@ -19,7 +19,7 @@ generarTablero()
             '<i class="fas fa-chess"></i>',
             '<i class="fas fa-dice-d20"></i>',
         ]
-    }
+  }
 
     function generarTablero() {
         cargarIconos()
@@ -37,7 +37,7 @@ generarTablero()
                         <i class="far fa-question-circle"></i>
                     </div>
                 </div>
-            </div>        
+            </div>
             `)
             if (i % 2 == 1) {
                 iconos.splice(0, 1)
