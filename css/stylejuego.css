@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
 :root {
+    /*COLORES*/
+    --colorMorado: #243F92;
+    --colorMoradoOscuro: #29337d;
+    --colorMoradoLight: #f0f0f7;
+    --colorNaranja: #ff9500;
+    --colorNaranjaOscuro: #ea5721;
+
     --w: calc(70vw / 6);
     --h: calc(70vh / 4);
 }
@@ -10,8 +19,71 @@
 body {
     padding: 0;
     margin: 0;
-    background: #243F92;
-    min-height: 120vh;
+    background: var(--colorMorado);
+}
+
+ div {
+    display: inline-block;
+}
+
+.header{
+    background: white;
+    height: 90px;
+    width: 100%;
+}
+
+.contenedor-header{
+    display: flex;
+    align-items: center;
+}
+.header{
+    background-color: white;
+    height: 90px;
+    width: 100%;
+}
+.back a{
+    padding-left: 30px;
+    padding-right: 15px;
+}
+.icon-b{
+    color: var(--colorMoradoOscuro);
+    border-radius: 50%;
+    font-size: 35px;
+}
+.icon-b:hover{
+        color: white;
+        background: var(--colorMoradoOscuro);
+    }
+.logo-text .logo img{
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+}
+.logo-text .text img{
+    height: 45px;
+    padding-right: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+.contenedor-header .logo-text{
+    display: flex;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+}
+
+.title{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    color: white;
+}
+
+.cuerpo{
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,8 +92,16 @@ body {
     font-family: Impact;
 }
 
-div {
-    display: inline-block;
+.icon{
+    height: 115px;
+}
+
+.icon-back{
+    height: 90px;
+}
+
+.icon-quest{
+    color: white;
 }
 
 .area-tarjeta,
@@ -50,21 +130,24 @@ div {
 }
 
 .trasera {
-    background-color: lightcyan;
+    background-color: #FFE5E5;
     transform: rotateY(180deg);
 }
 
 .superior {
-    background: linear-gradient(#ff9500, #ea5721);
+    background: white;
 }
 
 .nuevo-juego {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    color: white;
     cursor: pointer;
     background: linear-gradient(#ff9500, #ea5721);
     padding: 20px;
     border-radius: 50px;
-    border: black 5px solid;
-    font-size: 130%;
+    border: 3px solid white;;
+    font-size: 140%;
 }
 
 @keyframes iniciar {

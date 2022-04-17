@@ -69,6 +69,11 @@ img{
     width: 100px;
 }
 
+.form-name-last{
+    display: flex;
+    gap: 0rem;
+}
+
 .container-img{
     width: 100%;
     display: flex;
@@ -96,7 +101,7 @@ img{
     border-bottom: 1px solid var(--colorMordado);
 }
 .form_div-one{
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 .form_icon{
     font-size: 1.5rem;
@@ -125,6 +130,8 @@ img{
 .form_div-input{
     position: relative;
 }
+
+
 .form_input{
     position: absolute;
     top: 0;
@@ -158,7 +165,7 @@ img{
     font-size: var(--normal-font-size);
     outline: none;
     border: none;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     background-color: var(--colorNaranja);
     border-radius: .5rem;
     cursor: pointer;
@@ -239,6 +246,10 @@ img{
     }
 
     .form_forgot{
+        margin-bottom: 2rem;
+    }
+
+    .form_div-one{
         margin-bottom: 2rem;
     }
 }

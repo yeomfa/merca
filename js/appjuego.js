@@ -6,18 +6,18 @@ generarTablero()
 
 function cargarIconos() {
     iconos = [
-            '<i class="fa-brands fa-python"></i>',
-            '<i class="fa-solid fa-code"></i>',
-            '<i class="fa-brands fa-php"></i>',
-            '<i class="fa-brands fa-java"></i>',
-            '<i class="fa-brands fa-js"></i>',
-            '<i class="fa-brands fa-css3"></i>',
-            '<i class="fa-brands fa-html5"></i>',
-            '<i class="fa-solid fa-folder-open"></i>',
-            '<i class="fa-solid fa-microchip"></i>',
-            '<i class="fa-solid fa-bitcoin-sign"></i>',
-            '<i class="fas fa-chess"></i>',
-            '<i class="fas fa-dice-d20"></i>',
+            '<img src="img/iconsProducts/agua.png" class="icon" alt="Agua">',
+            '<img src="img/iconsProducts/arroz.png" class="icon" alt="Arroz">',
+            '<img src="img/iconsProducts/atun.png" class="icon" alt="Atún">',
+            '<img src="img/iconsProducts/azucar.png" class="icon" alt="Azúcar">',
+            '<img src="img/iconsProducts/candy.png" class="icon" alt="Candy">',
+            '<img src="img/iconsProducts/huevos.png" class="icon" alt="Huevos">',
+            '<img src="img/iconsProducts/leche.png" class="icon" alt="Leche">',
+            '<img src="img/iconsProducts/pan.png" class="icon" alt="Pan">',
+            '<img src="img/iconsProducts/sal.png" class="icon" alt="Sal">',
+            '<img src="img/iconsProducts/soda.png" class="icon" alt="Soda">',
+            '<img src="img/iconsProducts/tomate.png" class="icon" alt="Tomate">',
+            '<img src="img/iconsProducts/zanahoria.png" class="icon" alt="Zanahoria">',
         ]
   }
 
@@ -34,7 +34,7 @@ function cargarIconos() {
                         ${iconos[0]}
                     </div>
                     <div class="cara superior">
-                        <i class="far fa-question-circle"></i>
+                        <img src="img/general/BannerLogin.png" class="icon-back">
                     </div>
                 </div>
             </div>
@@ -69,8 +69,8 @@ function cargarIconos() {
                 tarjeta1.style.transform = "rotateY(0deg)"
                 tarjeta2.style.transform = "rotateY(0deg)"
             } else {
-                trasera1.style.background = "plum"
-                trasera2.style.background = "plum"
+                trasera1.style.background = "lightgreen"
+                trasera2.style.background = "lightgreen"
             }
             if (verificarFin()) {
                 swal.fire({
@@ -85,7 +85,7 @@ function cargarIconos() {
     function verificarFin() {
         for (let i = 0; i < cantidadTarjetas; i++) {
             let trasera = document.getElementById("trasera" + i)
-            if (trasera.style.background != "plum") {
+            if (trasera.style.background != "lightgreen") {
                 return false
             }
         }
