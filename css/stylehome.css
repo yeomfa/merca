@@ -540,6 +540,7 @@ body{
 }
 
 .bar-menu.close{
+    padding-top: 38px;
     width:30px;
     background: none;
     box-shadow: none;
@@ -552,9 +553,7 @@ body{
 .bar-menu.close .bar-options,
 .bar-menu.close .name,
 .bar-menu.close .rol{
-    font-size: 0;
-    opacity: 0;
-    width: 0;
+    display: none;
 }
 
 .bar-menu li{
@@ -597,6 +596,12 @@ body{
     transition: var(--tran-03);
 }
 
+.bar-logo-text a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
 .bar-menu header .bar-logo-text .bar-text{
     display: flex;
     flex-direction: column;
@@ -623,6 +628,7 @@ body{
     border-radius: 2px;
     background: white;
     padding: 4px;
+    cursor: pointer;
 }
 
 .bar-menu .bar-search{

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merca: Mi perfil</title>
+    <link rel="icon" href="img/general/BannerLogin.png">
+    <link rel="stylesheet" href="css/styleprofile.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor-header">
+            <div class="back">
+                <a href="home.html" aria-label="Volver" title="Volver"><i class='bx bx-chevron-left icon-b'></i></a>
+            </div>
+            <div class="logo-text">
+                <span class="logo"> <img src="img/logos/LogoMercaAroundFinal.png" alt="Logo Merca"></span>
+                <span class="text"><img src="img/logos/LogoText.png" alt="texto del logo"></span>
+            </div>
+        </div>
+    </header>
+    <main class="container-main">
+        <div class="content-main">
+            <div class="head-main">
+                <div class="cont-img">
+                    <img src="hojasDeVida/hojaOmar/IMG_20210703_171414.jpg" alt="Foto perfil" class="img-profile">
+                    <div class="up-image" tabindex="0">
+                        <i class='bx bx-image-add'></i>
+                    </div>
+                </div>
+                <div class="cont-name-user">
+                    <span class="name">Omar Fandiño</span>
+                    <span class="rol">Vendedor/Comprador</span>
+                </div>
+            </div>
+
+            <!--INFORMATION-->
+
+            <div class="container-info">
+                <div class="cont-date">
+                    <i class='bx bx-envelope icon-info'></i>
+                    <label>Correo:</label>
+                    <span id="email">omarfandino@gmail.com</span>
+                </div>
+
+                <div class="cont-date">
+                    <i class='bx bx-mobile-alt icon-info'></i>
+                    <label>Teléfono:</label>
+                    <span id="phone">302249184843</span>
+                </div>
+
+                <div class="cont-date">
+                    <i class='bx bx-home icon-info'></i>
+                    <label>Dirección:</label>
+                    <span id="dir">302249184843</span>
+                </div>
+
+                <div class="cont-date">
+                    <i class='bx bx-lock-alt icon-info'></i>
+                    <label>Contraseña:</label>
+                    <span id="password">**********</span>
+                </div>
+
+            </div>
+
+            <div class="cont-buttons">
+                <button class="btn-modify">
+                    <div>
+                        <span class="modify">Modificar</span>
+                        <i class='bx bx-pencil btn-icon'></i>
+                    </div>
+                </button>
+                <button class="btn-delete">
+                    <div>
+                        <span class="delete">Eliminar cuenta</span>
+                        <i class='bx bx-trash btn-icon'></i>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <!--EDITS-->
+        <div class="container-edits close">
+            <div class="container-btnClose">
+                <i id="btnClose" class='bx bx-x btn-close'></i>
+            </div>
+            <form action="" method="post" class="content-edits">
+                <div class="title">Actualizar datos:</div>
+                <div class="cont-field">
+                    <i class='bx bx-user icon-info'></i>
+                    <label class="subtitle" for="newname">Nombre:</label>
+                    <input id="newname" type="text" title="nombre" value="">
+                </div>
+                <div class="cont-field">
+                    <i class='bx bx-envelope icon-info'></i>
+                    <label class="subtitle" for="new">Correo:</label>
+                    <input id="newemail" type="text" title="correo" value="">
+                </div>
+                <div class="cont-field">
+                    <i class='bx bx-mobile-alt icon-info'></i>
+                    <label class="subtitle" for="newphone">Teléfono:</label>
+                    <input id="newphone" type="text" title="teléfono" value="">
+                </div>
+                <div class="cont-field">
+                    <i class='bx bx-home icon-info'></i>
+                    <label class="subtitle" for="newdirection">Dirección:</label>
+                    <input id="newdir" type="text" title="dirección" value="">
+                </div>
+                <div class="cont-field">
+                    <i class='bx bx-lock-alt icon-info'></i>
+                    <label class="subtitle" for="newpassword">Contraseña:</label>
+                    <input id="newpassword" type="text" title="contraseña" value="">
+                </div>
+                <button type="button" class="btn-act" title="Actualizar">
+                    <span>Actualizar</span>
+                    <i class='bx bx-check btn-icon'></i>
+                </button>
+            </form>
+        </div>
+    </main>
+    <script src="js/appprofile.js"></script>
+</body>
+
+</html>

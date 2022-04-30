@@ -243,11 +243,9 @@ img{
     }
 }
 
-@media screen and (max-height: 750px){
+@media screen and (max-height: 600px){
     .form_img{
         display: none;
-        width: 350px;
-        justify-self: center;
     }
 
     .form{

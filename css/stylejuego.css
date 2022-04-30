@@ -36,11 +36,7 @@ body {
     display: flex;
     align-items: center;
 }
-.header{
-    background-color: white;
-    height: 90px;
-    width: 100%;
-}
+
 .back a{
     padding-left: 30px;
     padding-right: 15px;
@@ -74,6 +70,9 @@ body {
     height: 90px;
     width: 100%;
 }
+
+
+/****BODY****/
 
 .title{
     font-family: 'Quicksand', sans-serif;

@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    /*COLORES*/
+    --colorMorado: #243F92;
+    --colorMoradoOscuro: #29337d;
+    --colorMoradoLight: #f0f0f7;
+    --colorNaranja: #ff9500;
+    --colorNaranjaOscuro: #ea5721;
+
+    --body-font: 'Quicksand', sans-serif;
+    --big-font-size: 2rem;
+    --normal-font-size: 0.938rem;
+    --smaller-font-size: 0.875rem;
+}
+
+* {
+    transition: all 0.5s;
+    font-family: var(--body-font);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: var(--colorMoradoOscuro);
+}
+
+div {
+    display: inline-block;
+}
+
+/****HEADER****/
+
+.header {
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 0px 0px 20px -10px;
+}
+
+.contenedor-header {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.back a {
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
+.icon-b {
+    color: var(--colorMoradoOscuro);
+    border-radius: 50%;
+    font-size: 35px;
+}
+
+.icon-b:hover {
+    color: white;
+    background: var(--colorMoradoOscuro);
+}
+
+.logo-text .logo img {
+    height: 25px;
+    padding-left: 20px;
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-text .text img {
+    height: 30px;
+    padding-right: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.contenedor-header .logo-text {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    ;
+    width: 100%;
+}
+
+/****MAIN****/
+
+.container-main {
+    padding-top: 90px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.content-main {
+    margin: 0 auto;
+    background: rgb(255, 255, 255);
+    width: 50%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.head-main {
+    width: 90%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid var(--colorMoradoOscuro);
+    margin-bottom: 1.5rem;
+}
+
+.cont-img {
+    height: 130px;
+    width: 130px;
+    position: relative;
+}
+
+.img-profile {
+    width: 87%;
+    height: 87%;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    padding: 4px;
+    border: 3px solid var(--colorMoradoOscuro);
+}
+
+.up-image {
+    background: var(--colorMoradoOscuro);
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 65%;
+    right: 1%;
+    cursor: pointer;
+    transition-duration: .2s;
+}
+
+.up-image:hover {
+    background: #1c47c7;
+}
+
+.up-image i {
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+.cont-name-user {
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-name-user .name {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.cont-name-user .rol {
+    font-weight: 400;
+    font-size: 17px;
+}
+
+/****BODY****/
+
+
+.container-info {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-info {
+    font-size: 18px;
+    color: #232323;
+}
+
+.cont-date {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cont-date label {
+    color: #232323;
+    font-weight: 600;
+}
+
+/****BOTONES****/
+
+.cont-buttons button div {
+    display: flex;
+    align-items: center;
+}
+
+.cont-buttons button {
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px -2px;
+    margin: 1rem;
+    cursor: pointer;
+    background: none;
+}
+
+.cont-buttons .btn-delete {
+    background: rgb(255, 33, 33);
+    border: none;
+}
+
+.cont-buttons .btn-delete span {
+    color: white;
+}
+
+.cont-buttons .btn-delete:hover span {
+    padding-right: 5px;
+}
+
+.cont-buttons .btn-delete:hover i {
+    font-size: 15px;
+    color: white;
+}
+
+.cont-buttons .btn-modify {
+    background: var(--colorMoradoOscuro);
+    border: none;
+}
+
+.cont-buttons .btn-modify span {
+    color: white;
+}
+
+.cont-buttons .btn-modify:hover span {
+    padding-right: 5px;
+}
+
+.cont-buttons .btn-modify:hover i {
+    font-size: 15px;
+    color: white;
+}
+
+button span {
+    font-weight: 600;
+}
+
+.delete {
+    color: black;
+}
+
+.btn-icon {
+    transition: 0.2s;
+    font-size: 0;
+}
+
+/**** EDITS ****/
+
+.btn-close{
+    position: absolute;
+    font-size: 25px;
+    left: 64%;
+    top: 2%;
+    cursor: pointer;
+    color: gray;
+}
+
+.container-edits {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+.container-edits.close {
+    display: none;
+}
+
+.content-edits {
+    padding: 1.5rem;
+    height: 65%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    box-shadow: 0px 0px 100px -20px;
+    border-radius: 20px;
+}
+
+.cont-field{
+    padding: 1.3rem;
+}
+
+.cont-field input {
+    border: none;
+    border-bottom: 1px solid rgb(138, 138, 138);
+    height: 15px;
+}
+
+.cont-field input:focus {
+    outline: none;
+    border-color: black;
+} 
+
+.title {
+    font-weight: 600;
+}
+
+.subtitle {
+    font-weight: 500;
+}
+
+.btn-act {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px -2px;
+    margin: 1rem;
+    cursor: pointer;
+    background: var(--colorMoradoOscuro);
+    border: none;
+}
+
+.btn-act span{
+    color: white;
+    padding: .5rem;
+}
+
+.btn-act:hover i{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
