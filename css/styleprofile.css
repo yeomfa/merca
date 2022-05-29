@@ -345,3 +345,178 @@ button span {
     font-weight: bold;
     color: white;
 }
+
+/**** ALERTS ****/ 
+
+
+.container-alerts {
+    padding-top: 7%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+.content-alerts {
+    padding: 1.5rem;
+    height: 20%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    box-shadow: 0px 0px 100px -20px;
+    border-radius: 20px;
+}
+
+.header-alerts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    padding-bottom: 10px;
+}
+
+.header-alerts i {
+    color: rgb(21, 230, 21);
+    font-size: 25px;
+}
+
+.header-alerts span {
+    font-size: 18px;
+}
+
+.main-alerts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: .5rem;
+}
+
+/**ERROR**/
+
+.header-alerts-error {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    padding-bottom: 10px;
+}
+
+.header-alerts-error i {
+    color: rgb(230, 21, 21);
+    font-size: 25px;
+}
+
+.header-alerts-error span {
+    font-size: 18px;
+}
+
+/** WARNING **/
+
+.container-alerts-warning {
+    padding-top: 7%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+.content-alerts-warning {
+    padding: 1.5rem;
+    height: 20%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    box-shadow: 0px 0px 100px -20px;
+    border-radius: 20px;
+}
+
+.header-alerts-warning {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    padding-bottom: 10px;
+}
+
+.header-alerts-warning i {
+    color: rgb(255, 255, 0);
+    font-size: 25px;
+}
+
+.header-alerts-warning span {
+    font-size: 18px;
+}
+
+.main-alerts-warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: .1rem;
+}
+
+.main-alerts-warning span {
+    text-align: center;
+}
+
+.btn-cancel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px -2px;
+    margin: 1rem;
+    cursor: pointer;
+    background: var(--colorMoradoOscuro);
+    border: none;
+}
+
+.btn-cancel span{
+    color: white;
+    padding: .5rem;
+}
+
+.btn-cancel:hover i{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.btn-delete-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px -2px;
+    margin: 1rem;
+    cursor: pointer;
+    background: rgb(255, 33, 33);
+    border: none;
+}
+
+.btns-warning {
+    display: flex;
+}
+
+.btn-delete-2 span{
+    color: white;
+    padding: .5rem;
+}
+
+.btn-delete-2:hover i{
+    font-size: 15px;
+    color: white;
+}
+

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merca: Administrador</title>
+    <link rel="stylesheet" href="css/styleadmin.css">
+    <link rel="icon" href="img/general/BannerLogin.png">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="js/appadmin.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header-admin">
+        <div class="content-header">
+            <div class="text-logo">
+                <img class="logo" src="img/logos/LogoMercaAroundFinal.png" alt="">
+                <img class="text" src="img/logos/LogoText.png" alt="">
+            </div>
+            <p>| Administrador</p>
+        </div>
+    </header>
+
+    <!-- BODY -->
+    <div class="container-body">
+        <div class="menu-bar">
+            <div class="header-menu">
+                <i class='bx bxs-user-detail'></i>
+                <p>Administrador</p>
+            </div>
+            <div class="main-menu-background">
+                <!-- BAR MENU -->
+                <div class="main-menu">
+                    <ul>
+                        <li>
+                            <a id="tables">
+                                <i class='bx bx-grid-alt color'></i>
+                                <p class="color">Tablas</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="history">
+                                <i class='bx bx-list-ul color'></i>
+                                <p class="color">Historial</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bx-log-out color' ></i>
+                                <p class="color">Cerrar sesión</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- MAIN -->
+        <div class="main-content">
+            <!-- SELECCIONAR TABLAS -->
+            <div id="grid-tables" class="grid-tables">
+                <div id="users" class="container-select">
+                    <div class="icon-table">
+                        <i class='bx bx-group' ></i>
+                    </div>
+                    <div class="title-table-select">
+                        <p>Usuarios</p>
+                    </div>
+                </div>
+                <div id="stores" class="container-select">
+                    <div class="icon-table">
+                        <i class='bx bx-store' ></i>
+                    </div>
+                    <div class="title-table-select">
+                        <p>Tiendas</p>
+                    </div>
+                </div>
+                <div id="products" class="container-select">
+                    <div class="icon-table">
+                        <i class='bx bx-shopping-bag'></i>
+                    </div>
+                    <div class="title-table-select">
+                        <p>Productos</p>
+                    </div>
+                </div>
+                <div id="dir" class="container-select">
+                    <div class="icon-table">
+                        <i class='bx bx-home' ></i>
+                    </div>
+                    <div class="title-table-select">
+                        <p>Direcciones</p>
+                    </div>
+                </div>
+                <div id="orders" class="container-select">
+                    <div class="icon-table">
+                        <i class='bx bx-file' ></i>
+                    </div>
+                    <div class="title-table-select">
+                        <p>Ordenes</p>
+                    </div>
+                </div>
+            </div>
+            <!-- TABLAS -->
+            <div id="container-table" class="container-table">
+                <div id="load-table-users">
+                    <div class="title-add">
+                        <p class="title-table">Usuarios:</p>
+                        <button id="btn-add" title="Agregar usuario">Agregar usuario<i class='bx bx-user-plus'></i></button>
+                    </div>
+                    <table id="table-users" class="table-users">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Correo</th>
+                                <th>Teléfono</th>
+                                <th>Dirección</th>
+                                <th>Foto</th>
+                                <th>Admin</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Omar Fanndiño</td>
+                                <td>omar@gmail.com</td>
+                                <td>303499293</td>
+                                <td>El Banco</td>
+                                <td>inspi.jpg</td>
+                                <td>1</td>
+                                <td class="btns">
+                                    <button title="Editar" class="btnEdit"><i class='bx bx-pencil'></i></button>
+                                    <button title="Eliminar" class="btnDelete"><i class='bx bx-trash'></i></button>
+                                </td>
+                            </tr>
+                    </table>
+                </div>
+                <div id="load-table-stores">
+                    <div class="title-add">
+                        <p class="title-table">Tiendas:</p>
+                        <button id="btn-add" title="Agregar tienda">Agregar tienda<i class='bx bx-store' ></i></button>
+                    </div>
+                    <table id="table-stores" class="table-stores">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Descripción</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>La grande</td>
+                                <td>Una tienda con productos geniales</td>
+                                <td class="btns">
+                                    <button title="Editar" class="btnEdit"><i class='bx bx-pencil'></i></button>
+                                    <button title="Eliminar" class="btnDelete"><i class='bx bx-trash'></i></button>
+                                </td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div id="seehistory" class="history">
+                <p>Historial de movimientos</p>
+            </div>
+
+            <!-- MODAL EDIT USER -->
+            <div class="modal-edit">
+                <div class="container-edits close">
+                    <div class="container-btnClose">
+                        <i id="btnClose" class='bx bx-x btn-close'></i>
+                    </div>
+                    <form action="" method="post" class="content-edits">
+                        <div class="title">Agregar usuario:</div>
+                        <div class="cont-field">
+                            <i class='bx bx-user icon-info'></i>
+                            <label class="subtitle" for="newname">Nombre:</label>
+                            <input id="newname" type="text" title="nombre" value="">
+                        </div>
+                        <div class="cont-field">
+                            <i class='bx bx-envelope icon-info'></i>
+                            <label class="subtitle" for="new">Correo:</label>
+                            <input id="newemail" type="text" title="correo" value="">
+                        </div>
+                        <div class="cont-field">
+                            <i class='bx bx-mobile-alt icon-info'></i>
+                            <label class="subtitle" for="newphone">Teléfono:</label>
+                            <input id="newphone" type="text" title="teléfono" value="">
+                        </div>
+                        <div class="cont-field">
+                            <i class='bx bx-home icon-info'></i>
+                            <label class="subtitle" for="newdirection">Dirección:</label>
+                            <input id="newdir" type="text" title="dirección" value="">
+                        </div>
+                        <div class="cont-field">
+                            <i class='bx bx-lock-alt icon-info'></i>
+                            <label class="subtitle" for="newpassword">Contraseña:</label>
+                            <input id="newpassword" type="text" title="contraseña" value="">
+                        </div>
+                        <button type="button" class="btn-act" title="Actualizar">
+                            <span>Agregar</span>
+                            <i class='bx bx-user-plus btn-icon'>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

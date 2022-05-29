@@ -76,7 +76,7 @@
                 </button>
                 <button class="btn-delete">
                     <div>
-                        <span class="delete">Eliminar cuenta</span>
+                        <span id="delete" class="delete">Eliminar cuenta</span>
                         <i class='bx bx-trash btn-icon'></i>
                     </div>
                 </button>
@@ -121,7 +121,71 @@
                 </button>
             </form>
         </div>
+
+        <!--ALERTS-->
+
+        <!-- SUCCES -->
+
+        <div id="succes" class="container-alerts">
+            <div class="content-alerts">
+                <div class="header-alerts">
+                    <i class='bx bxs-check-circle'></i>
+                    <span> ÉXITO </span>
+                </div>
+                <div class="main-alerts">
+                    <span id="msg-alert">¡Los datos se han actualizado!</span>
+                </div>
+                <button type="button" class="btn-act btn-acept" title="Actualizar">
+                    <span>Aceptar</span>
+                    <i class='bx bx-check btn-icon'></i>
+                </button></div>
+            </form>
+        </div>
+
+        <!--ERROR-->
+
+        <div id="error" class="container-alerts">
+            <div class="content-alerts">
+                <div class="header-alerts-error">
+                    <i class='bx bxs-x-circle'></i>
+                    <span> ERROR </span>
+                </div>
+                <div class="main-alerts">
+                    <span id="msg-alert-error">¡Ha ocurrido un error!</span>
+                </div>
+                <button type="button" class="btn-act" title="Actualizar">
+                    <span>Aceptar</span>
+                    <i class='bx bx-check btn-icon'></i>
+                </button></div>
+            </form>
+        </div>
+
+        <!-- WARNING -->
+
+        <div id="warning" class="container-alerts-warning">
+            <div class="content-alerts-warning">
+                <div class="header-alerts-warning">
+                    <i class='bx bxs-error' ></i>
+                    <span> ADVERTENCIA </span>
+                </div>
+                <div class="main-alerts-warning">
+                    <span id="msg-alert-warning">¿Eliminar su cuenta de manera permanente?</span>
+                </div>
+                <div class="btns-warning">
+                    <button type="button" class="btn-cancel" title="Cancelar">
+                        <span>Cancelar</span>
+                        <i class='bx bx-x btn-icon'></i>
+                    </button>
+                    <button type="button" class="btn-delete-2" title="Eliminar">
+                        <span>Eliminar</span>
+                        <i class='bx bx-trash btn-icon'></i>
+                    </button>
+                </div>
+                
+        </div>
+
     </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/appprofile.js"></script>
 </body>
 
